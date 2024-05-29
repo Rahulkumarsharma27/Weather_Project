@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(204, 85%, 23%);
+    font-family: sans-serif;
+    height: 100vh;
+
+}
+
+.weather{
+    background-color: aliceblue;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.search-form{
+    display: flex;
+    align-items: center;
+
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.search-button{
+    cursor: pointer;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #74b7e3;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+.search-button:hover{
+    background-color: #2980b9;
+}
+
+.city-section{
+    margin-top:  30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 10px;
+    
+}
+
+.city-section .city-name{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.city-section .date{
+    /* font-size: 2rem;
+    opacity: 0.9; */
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #e3eef4;
+}
+.temp-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.temp-info .temp{
+    font-size: 10rem;
+}
+
+.temp-info .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.temp-info .desc i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.temp-info .desc span{
+    font-size: 1.5rem;
+
+}
+
+.add-info{
+    display: flex;
+    justify-content: space-around;
+   
+    margin-top: 20px;
+}
+.add-info .material-icons{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+.wind-info , .humidity-info , .visibility-info
+{
+    background-color: #e3eef4;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.wind-info div , .humidity-info div , .visibility-info div{
+    text-align: center;
+}
+
